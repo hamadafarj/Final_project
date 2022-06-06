@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doctor.Login_Doctor_Activity">
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/EdEmail"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="25dp"
+        android:layout_marginTop="28dp"
+        android:hint="أدخل البريد الألكتروني"
+        android:gravity="center"
+        android:background="@drawable/login_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+    <EditText
+        android:id="@+id/EdPassword"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="25dp"
+        android:layout_marginTop="28dp"
+        android:hint="كلمة المرور"
+        android:gravity="center"
+        android:background="@drawable/login_email"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EdEmail" />
+    <EditText
+        android:id="@+id/EdRePassword"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="25dp"
+        android:layout_marginTop="28dp"
+        android:hint="تأكيد كلمة المرور"
+        android:gravity="center"
+        android:background="@drawable/login_email"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EdPassword" />
+
+
+    <Button
+        android:id="@+id/BtnLoginDr"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="25dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/login_shepe"
+        android:text="تسجيل الدخول"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EdRePassword" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/BtnLoginDr"
+        app:layout_constraintStart_toStartOf="@id/BtnLoginDr"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@+id/BtnLoginDr"
+            app:layout_constraintEnd_toEndOf="@id/BtnLoginDr"
+            android:text="   تسجيل دخول" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/BtnLoginDr"
+            app:layout_constraintEnd_toEndOf="@id/BtnLoginDr"
+            android:text="    هل لديك حساب ؟" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/Progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

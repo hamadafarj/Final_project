@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doctor.Add_Journey_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-65dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/NameDr"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="56dp"
+                android:background="@drawable/login_email"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="أدخل الاسم"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <EditText
+                android:id="@+id/PointStart"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/login_email"
+                android:ems="10"
+                android:gravity="center"
+                android:hint=" نقطة الانطلاق"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/NameDr"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/NameDr"
+                app:layout_constraintTop_toBottomOf="@+id/NameDr" />
+
+            <EditText
+                android:id="@+id/pointEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/login_email"
+                android:ems="10"
+                android:gravity="center"
+                android:hint=" نقطة الوصول"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/PointStart"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/PointStart"
+                app:layout_constraintTop_toBottomOf="@+id/PointStart" />
+
+            <EditText
+                android:id="@+id/TimeStart"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/login_email"
+                android:ems="10"
+                android:gravity="center"
+                android:hint=" توقيت انطلاق الرحلة"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="@+id/pointEnd"
+                app:layout_constraintTop_toBottomOf="@+id/pointEnd" />
+
+            <EditText
+                android:id="@+id/PhoneDr"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:autofillHints=""
+                android:background="@drawable/login_email"
+                android:ems="10"
+                android:gravity="center"
+                android:hint=" ادخل رقم الهاتف الخاص بك"
+                android:inputType="phone"
+                app:layout_constraintEnd_toEndOf="@+id/TimeStart"
+                app:layout_constraintStart_toStartOf="@+id/TimeStart"
+                app:layout_constraintTop_toBottomOf="@+id/TimeStart" />
+
+            <NumberPicker
+                android:id="@+id/numberPicker"
+                android:layout_width="90dp"
+                android:layout_height="88dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PhoneDr" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="64dp"
+                android:text="عدد الاشخاص"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/numberPicker"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/numberPicker"
+                app:layout_constraintVertical_bias="0.494" />
+
+            <Button
+                android:id="@+id/AddJourney"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="25dp"
+                android:layout_marginTop="63dp"
+                android:background="@drawable/login_shepe"
+                android:text="اضف الرحلة"
+                android:textColor="#fff"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/numberPicker" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
